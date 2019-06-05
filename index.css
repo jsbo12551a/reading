@@ -1,0 +1,575 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: '微軟正黑體';
+  /* outline: 1px solid red; */
+}
+body {
+  width: 100%;
+}
+img {
+  display: block;
+  vertical-align: top;
+}
+h3 {
+  font-size: 25px;
+}
+.header {
+  background-image: url(img/photo-1521036392421-35d436448d6a.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+.navbar {
+  padding-top: 30px;
+}
+.navbar h1 {
+  float: left;
+  width: 300px;
+  margin-left: 30px;
+}
+.navbar h1 img {
+  width: 100%;
+}
+.navbar ul {
+  float: right;
+  margin-right: 30px;
+}
+.navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.navbar ul li a {
+  color: black;
+  display: block;
+  padding: 10px;
+  transition: 0.2s;
+}
+.navbar ul a:hover {
+  color: rgb(23, 68, 21);
+  font-size: 18px;
+}
+.navbar ul .login {
+  color: green;
+  border: 2px solid rgb(5, 136, 5);
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.navbar ul .login:hover {
+  color: white;
+  background-color: rgb(5, 136, 5);
+}
+.navbar::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ' ';
+  clear: both;
+  height: 0;
+}
+
+.txt {
+  margin-top: 100px;
+  margin-left: 30px;
+}
+.txt h2 {
+  font-size: 40px;
+  padding: 30px 0;
+}
+.txt p {
+  font-size: 25px;
+  padding: 20px 0;
+}
+.txt a {
+  display: block;
+  color: black;
+  border: 2px solid black;
+  padding: 15px;
+  width: 110px;
+  border-radius: 30px;
+  transition: 0.2s;
+  text-align: center;
+}
+.txt a:hover {
+  color: white;
+  background-color: black;
+}
+.txt a:focus {
+  background-color: rgb(255, 0, 0);
+  transition: 3s;
+}
+.purpose {
+  padding: 100px;
+}
+.purpose h3 {
+  text-align: center;
+  padding: 30px 0;
+}
+.purpose .item {
+  position: relative;
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  position: relative;
+}
+.purpose::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ' ';
+  clear: both;
+  height: 0;
+}
+/* .purpose .item h4 {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  transition: 0.5s;
+} */
+.purpose .item .description {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  transition: 0.5s;
+}
+.purpose .item:hover .description {
+  padding: 50px;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.657);
+  color: #333;
+}
+
+.purpose .item:hover .description h4 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.purpose .item samp {
+  display: none;
+  transition: 0.2s;
+  color: wheat;
+}
+.purpose .item:hover samp {
+  position: absolute;
+  display: block;
+  color: #333;
+  left: 50px;
+}
+.purpose .item img {
+  width: 100%;
+  height: 400px;
+}
+
+.ranking {
+  width: 100%;
+  padding: 100px;
+  background-color: rgba(80, 231, 50, 0.712);
+}
+.ranking::after {
+  content: ' ';
+  visibility: hidden;
+  font-size: 0;
+  clear: both;
+  height: 0;
+  display: block;
+}
+.rankingmain {
+  float: left;
+  width: 50%;
+  margin-top: 50px;
+}
+.rankingmain h3 {
+  text-align: center;
+  padding: 20px 0;
+}
+.rankingmain li {
+  padding: 20px 0;
+  list-style-type: none;
+}
+
+.rankingmain li a {
+  display: block;
+  color: black;
+}
+.rankingmain .bookimg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.rankingmain img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.rankingmain p {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 20px;
+}
+
+.rankingmain span {
+  display: block;
+  margin: 20px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.rankingmain .item {
+  margin: auto;
+  text-align: center;
+}
+.rankingmain .item ul {
+  border: 1px solid black;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.rankingmain .item ul a {
+  color: black;
+}
+.rankingmain .item ul p {
+  display: block;
+}
+.rankingmain .item li {
+  display: inline-block;
+}
+
+.rankingmain .item .like {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid #f9c;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.rankingmain .item .like:hover {
+  border: 2px solid #f9c;
+  background-color: #f9c;
+  color: white;
+}
+
+.loin {
+  background-image: url(img/photo-1465250860274-dcd028a21bad.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.loin p {
+  padding: 100px 0;
+  font-size: 35px;
+  color: white;
+}
+
+.loin a {
+  border: 2px solid rgb(5, 136, 5);
+  color: green;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 20px;
+  transition: 0.2s;
+  font-size: 25px;
+}
+
+.loin a:hover {
+  background-color: rgb(5, 136, 5);
+  color: white;
+}
+footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 1260px) {
+  .purpose {
+    padding: 50px 100px;
+  }
+  .purpose .item img {
+    width: 100%;
+    height: 300px;
+  }
+  .rankingmain {
+    float: none;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .purpose .item .description {
+    right: 20px;
+  }
+  .purpose .item:hover .description {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .purpose .item img {
+    width: 100%;
+    height: 250px;
+  }
+  .purpose .item .description {
+    right: 30px;
+  }
+  .purpose .item:hover .description {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .purpose .item img {
+    width: 90%;
+    height: 300px;
+  }
+  .purpose .item {
+    float: left;
+    width: 50%;
+    padding: 20px 10px;
+    position: relative;
+  }
+
+  .purpose .item .description {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 20px;
+    color: white;
+  }
+  .purpose .item .description {
+    right: 30px;
+  }
+  .purpose .item:hover .description {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 731px) {
+  .txt {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .txt h2 {
+    font-size: 40px;
+  }
+  .txt p {
+    font-size: 25px;
+    padding: 20px 0;
+    color: white;
+  }
+  .txt a {
+    display: block;
+    color: white;
+    border: 2px solid white;
+    padding: 15px;
+    width: 110px;
+    border-radius: 30px;
+    transition: 0.2s;
+    margin: auto;
+  }
+  .txt a:hover {
+    color: black;
+    background-color: white;
+  }
+  .rankingmain h3 {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .rankingmain li {
+    padding: 20px 0;
+    list-style-type: none;
+  }
+
+  .rankingmain li a {
+    display: block;
+    color: black;
+  }
+  .rankingmain .bookimg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .rankingmain img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+  .rankingmain p {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 20px;
+  }
+
+  .rankingmain span {
+    display: block;
+    margin: 20px 0;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .rankingmain .item {
+    margin: auto;
+    text-align: center;
+  }
+  .rankingmain .item ul {
+    border: 1px solid black;
+    margin: 0px;
+    border-radius: 20px;
+    background-color: white;
+  }
+
+  .rankingmain .item ul a {
+    color: black;
+  }
+  .rankingmain .item ul p {
+    display: block;
+  }
+  .rankingmain .item li {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .txt {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .txt h2 {
+    font-size: 25px;
+  }
+  .txt p {
+    font-size: 18px;
+    padding: 20px 0;
+    color: white;
+  }
+  .txt a {
+    font-size: 18px;
+    display: block;
+    color: white;
+    border: 2px solid white;
+    padding: 15px;
+    width: 110px;
+    border-radius: 30px;
+    transition: 0.2s;
+    margin: auto;
+  }
+  .header {
+    background-image: url(img/photo-1521036392421-35d436448d6a.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+  }
+  .navbar {
+    padding-top: 10px;
+    text-align: center;
+  }
+  .navbar h1 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  .navbar h1 img {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .navbar ul {
+    float: none;
+    margin-right: 0;
+  }
+
+  .purpose {
+    padding: 10px;
+  }
+  .purpose .item img {
+    width: 100%;
+    height: 200px;
+  }
+  .purpose .item {
+    width: 50%;
+    padding: 10px 10px;
+  }
+
+  .purpose .item .description {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+  }
+
+  .rankingmain li {
+    padding: 10px 0;
+  }
+
+  .rankingmain p {
+    display: inline-block;
+    margin: 10px 0px;
+    font-size: 18px;
+    vertical-align: middle;
+  }
+
+  .rankingmain span {
+    display: block;
+    margin: 20px 0;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .rankingmain .item {
+    margin: auto;
+    text-align: center;
+  }
+  .rankingmain .item ul {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 20px;
+  }
+
+  .rankingmain .item ul p {
+    display: block;
+  }
+  .rankingmain .item li {
+    width: 100%;
+    display: block;
+  }
+
+  .loin {
+    height: 300px;
+  }
+  .loin p {
+    padding: 50px 20px;
+    font-size: 25px;
+  }
+  .loin a {
+    padding: 10px;
+  }
+}

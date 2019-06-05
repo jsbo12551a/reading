@@ -1,0 +1,331 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: '微軟正黑體';
+  /* outline: 1px solid red; */
+}
+body {
+  width: 100%;
+}
+img {
+  display: block;
+  vertical-align: top;
+}
+h3 {
+  font-size: 25px;
+}
+
+.header {
+  background-image: url(img/nbg.png);
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+}
+.navbar {
+  padding-top: 30px;
+}
+.navbar h1 {
+  float: left;
+  width: 300px;
+  margin-left: 30px;
+}
+.navbar h1 img {
+  width: 100%;
+}
+.navbar ul {
+  float: right;
+  margin-right: 30px;
+}
+.navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.navbar ul li a {
+  color: black;
+  display: block;
+  padding: 10px;
+  transition: 0.2s;
+}
+.navbar ul a:hover {
+  color: rgb(23, 68, 21);
+  font-size: 18px;
+}
+.navbar ul .login {
+  color: rgb(8, 209, 8);
+  border: 2px solid rgb(5, 136, 5);
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.navbar ul .login:hover {
+  color: white;
+  background-color: rgb(5, 136, 5);
+}
+.navbar::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ' ';
+  clear: both;
+  height: 0;
+}
+footer {
+  text-align: center;
+}
+.bookdata {
+  width: 100%;
+  padding: 30px;
+}
+.bookdata::after {
+  content: '';
+  font-size: 0;
+  clear: both;
+  height: 0;
+  display: block;
+  visibility: hidden;
+}
+.item {
+  float: left;
+  padding: 10px;
+}
+.bookimg {
+  width: 30%;
+}
+.bookimg img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.bookimg ul {
+  text-align: center;
+  margin-top: 50px;
+}
+.bookimg ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+.bookimg ul li button {
+  padding: 10px;
+  border: 0px;
+  border-radius: 10px;
+}
+.bookimg ul li button:hover {
+  background-color: #999;
+}
+.booktxt {
+  width: 40%;
+}
+.booktxt h2 {
+  font-size: 35px;
+  margin-top: 60px;
+  padding: 30px 0;
+}
+.booktxt p {
+  padding: 20px;
+}
+.bookdatas {
+  width: 30%;
+}
+.bookdatas .item2 h4 {
+  font-size: 20px;
+  /* padding: 20px 0; */
+}
+
+.bookdatas .item2 ul li {
+  list-style-type: none;
+  display: inline-block;
+  width: 49%;
+}
+
+.bookdatas .item2 ul li img {
+  width: 100%;
+  padding: 10px;
+}
+.usertxtlist::after {
+  content: '';
+  font-size: 0;
+  clear: both;
+  height: 0;
+  display: block;
+  visibility: hidden;
+}
+.usertxtlist {
+  float: left;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+}
+.usertxtlist .usertext a {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  vertical-align: middle;
+}
+.usertxtlist .usertext a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.usertxtlist .usertext input {
+  width: 50%;
+  height: 100px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: rgb(224, 220, 220);
+  margin-left: 20px;
+}
+
+.usertxtlist .txtlists {
+  width: 100%;
+}
+.usertxtlist .txtlists a {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.usertxtlist .txtlists ul {
+  margin-top: 30px;
+}
+/**/
+.usertxtlist .txtlists ul li {
+  list-style-type: none;
+  width: 100%;
+}
+.usertxtlist .txtlists a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.usertxtlist .txtlists p {
+  display: inline-block;
+  margin-left: 50vm;
+}
+.usertxtlist .txtlists ul li ul {
+  width: 100%;
+
+  text-align: right;
+}
+
+.usertxtlist .txtlists ul li ul li {
+  display: inline-block;
+  width: auto;
+}
+
+.usertxtlist .txtlists ul li ul li a {
+  display: inline-block;
+  height: auto;
+  width: auto;
+}
+
+@media screen and (max-width: 1048px) {
+  .item {
+    float: none;
+    padding: 10px;
+    margin: auto;
+  }
+  .bookimg {
+    width: 100%;
+  }
+  .bookimg img {
+    width: 30%;
+    display: block;
+    margin: auto;
+  }
+  .bookimg ul {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .bookimg ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px;
+  }
+  .bookimg ul li button {
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+  }
+  .booktxt h2 {
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .booktxt p {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .bookdatas {
+    width: 50%;
+  }
+  .bookdatas .item2 h4 {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+
+  .bookdatas .item2 ul li {
+    list-style-type: none;
+    display: inline-block;
+    width: 49%;
+  }
+
+  .bookdatas .item2 ul li img {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .usertxtlist .usertext a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+
+  .usertxtlist .usertext input {
+    width: 50%;
+    height: 100px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: rgb(224, 220, 220);
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 701px) {
+  .bookdatas .item2 ul li {
+    list-style-type: none;
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 601px) {
+  .header {
+    background-image: url(img/photo-1521036392421-35d436448d6a.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+  }
+  .navbar {
+    padding-top: 10px;
+    text-align: center;
+  }
+  .navbar h1 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  .navbar h1 img {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .navbar ul {
+    float: none;
+    margin-right: 0;
+  }
+}
